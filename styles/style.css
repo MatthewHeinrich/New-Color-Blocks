@@ -1,0 +1,34 @@
+h1 {
+    background-color: blue;
+    color: red
+}
+
+.box {
+    background-color: red;
+    width:100px ;
+    height: 100px;
+    float: left;
+    margin: 5px;
+    
+}
+.box2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+}
+.box3 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+}
+.box4 {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+}
