@@ -19,10 +19,28 @@ function getInfo() {
     }
     // push user into the cohort
     emirp.push(user);
-    console.log(emirp);
+    // put cohort list on DOM
+    // target ul element by id
+    let el = $( '#cohortOut' );
+    // empty ul
+    el.empty();
+    // loop through the cohort array
+    for (let i=0; i < emirp.length; i++){
+        // append each user to ul in DOM
+        el.append('<li>' + emirp[i].name + '</li>');
+    } // end for loop
+    
+    //update cohort count
+    // new variable
+    let count = $( '#cohortCount' );
+    // empty element
+    count.empty();
+    // append to element
+    count.append( emirp.length );
+
     // empty nameIn element
-    $('#nameIn').val(''); // SETS value for thiss element 
-}
+    $('#nameIn').val(''); // SETS value for this element 
+} // end getInfo
 
 function pTagClick() {
     console.log('Clicked on 1st pTag');
